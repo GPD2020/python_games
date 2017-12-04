@@ -147,4 +147,14 @@ def showStartScreen():
     pygame.display.update()
     FPSCLOCK.tick(FPS)                           
     degrees1 += 3 #rotate by 3 degrees each frame
-    degrees2 += 7                            
+    degrees2 += 7 #rotate by 7 degrees each frame
+                               
+def terminate():
+  pygame.quit()
+  sys.exit()
+                               
+def getRandomLocation():
+  return {'x': random.randint(0,CELLWIDTH - 1), 'y': random.randint(0,CELLHEIGHT -1)}
+                               
+def showGameOverScreen():
+                               
